@@ -23,6 +23,8 @@ bool physics_point_intersect_aabb(vec2 point, AABB aabb){
            point[1] >= min [1] &&
            point[1] <= max [1];
 }
+// if AABB has array inside -> the array does not decay, pass as a whole   (byval)
+// if AABB is declared as array AABB[] -> the array AABB decays to pointer (byref)
 
 void physics_init(void){
     state.body_list = arraylist_create(sizeof(Body), 0);
