@@ -117,7 +117,7 @@ Hit ray_intersect_aabb(vec2 pos, vec2 magnitude, AABB aabb){
             f32 t2 = (max[i]-pos[i])/magnitude[i];
 
             last_entry = fmaxf(last_entry, fmin(t1, t2));
-            first_exit = fmaxf(first_exit, fmaxf(t1, t2));
+            first_exit = fminf(first_exit, fmaxf(t1, t2));
         } else if(pos[i]<=min[i] || pos[i]>=max[i]){
             return hit;
         }
