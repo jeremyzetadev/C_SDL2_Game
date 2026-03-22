@@ -9,3 +9,7 @@
 
 ## Branch - 03_ShaderAndReadFiles setup dependencies and compile
 <img width="1513" height="384" alt="image" src="https://github.com/user-attachments/assets/7fabe486-64ed-447c-a0d5-c69ffcc513c0" />
+
+## Linmath and adding it to shared src include
+file at https://github.com/datenwolf/linmath.h/blob/master/linmath.h
+when linux: put it at /usr/local/include
